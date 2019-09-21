@@ -1,0 +1,88 @@
+
+.fa-twitter, .fa-facebook-f, .fa-instagram, .fa-whatsapp,.fa-cc-amex, .fa-cc-mastercard, .fa-money-bill-alt, .fa-cc-paypal{
+	font-size: 30px;
+	color: #FFF;
+	margin-right: 15px;
+}
+
+.amplia{
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #F3F1F3;
+}
+.amplia p{
+	text-align: justify;
+}
+.ampliar{
+	padding-right: 15px; 
+	padding-left: 15px;
+}
+.logo{
+	height: 75px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+.pie{
+	background-color: #ECEFEC;
+	height: 30px;
+}
+
+.pie-contacto{
+	height: 220px;
+	background-color: #C26BC6;
+}
+
+.pie-contacto p{
+	margin-bottom: 0;
+	text-align: justify;
+}
+
+.nav-link.active{
+	color: #FB83C8 !important;
+}
+
+.titulo-categoria{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	/*margin: 15px 0;*/
+	color: #3729ED;
+}
+.pie-contacto h5{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.pie-redes{
+	height: 95px;
+	margin-bottom: 10px;
+}
+
+.pie-redes h5{
+	margin-bottom: 10px;
+}
+/*Usado para dar estilos solo al primer parrafo*/
+/*.pie-contacto p:first-child{
+	margin-top: 15px;
+}*/
+
+/*Cómo quitar subrayado a través de CSS a un enlace o hipervinculo*/
+a:link { 
+	text-decoration:none; 
+}
+
+.negro{
+	color: black !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black !important;
+}
+
+.separador{
+	margin-top: 20px;
+}
+
+.pl-30{
+	padding-left: 30px;
+}
