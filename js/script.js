@@ -10,7 +10,23 @@ function addPoint(){
 	var longitud = coordenadas[1];
 
 	latitud = parseFloat(latitud);
-	longitud = parseFloat(longitud);
+    longitud = parseFloat(longitud);
+       
+    //Validacion de Longitud y latitud.
+    if (latitud && longitud){
+        if (latitud < -90 || latitud > 90 ){
+            alert("Latitud invalida");
+            return;
+        }
+        if (longitud < -180 || longitud > 180){
+            alert("Longitud invalida");
+            return;
+        }        
+    }
+    else{
+        alert("Ingrese Coordenadas");
+        return;
+    }
 
 	L.control.scale().addTo(map);
     L.marker([latitud,longitud], {draggable: false}).addTo(map)
