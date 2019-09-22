@@ -1,5 +1,10 @@
 function addPoint(){
-	var coordenadas = document.getElementById('inputCoordenadas').value;
+    var descripcion = document.getElementById('inputDescription').value;
+    var direccion = document.getElementById('inputAdress').value;
+    var telefono = document.getElementById('inputCellPhone').value;
+    var categoria = document.getElementById('selectCategoria').value;
+    var coordenadas = document.getElementById('inputCoordenadas').value;
+    
 	coordenadas = coordenadas.split(",",2);
 	var latitud = coordenadas[0];
 	var longitud = coordenadas[1];
@@ -8,7 +13,17 @@ function addPoint(){
 	longitud = parseFloat(longitud);
 
 	L.control.scale().addTo(map);
-	L.marker([latitud,longitud], {draggable: false}).addTo(map);
+    L.marker([latitud,longitud], {draggable: false}).addTo(map)
+    .bindPopup(
+        `<b>Descripción: </b>${descripcion}</br>
+        <b>Dirección: </b>${direccion}</br>
+        <b>Teléfono: </b>${telefono}</br>
+        <b>coordenadas: </b>${coordenadas}</br>
+        <b>Categoria: </b>${categoria}`
+    );
+    
+    document.getElementById('form').reset();
+
 }
 
 var map = L.map('map').
